@@ -1,0 +1,44 @@
+{
+  "name": "mail-digest",
+  "version": "1.0.0",
+  "description": "把任意 IMAP 邮箱（QQ / 163 / Gmail / iCloud / 自建域名…）的近期邮件整理成一份中文简报：本地统计摘要 + 可选 DeepSeek AI 总结。",
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "mail-digest": "index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "src",
+    ".env.example",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node index.mjs",
+    "demo": "node index.mjs --demo",
+    "providers": "node index.mjs --providers"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "imap",
+    "email",
+    "digest",
+    "mailbox",
+    "qq-mail",
+    "163-mail",
+    "gmail",
+    "icloud",
+    "mailparser",
+    "imapflow",
+    "deepseek",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "imapflow": "^1.0.0",
+    "mailparser": "^3.7.0"
+  }
+}

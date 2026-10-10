@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+
+# 密钥：绝不入库
+.env
+.env.*
+!.env.example
+
+# 本地配置与产物
+config.local.json
+out/
+*.log
+npm-debug.log*
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 本机推送脚本（只在这一台机器上有意义，别提交）
+/推送.cmd
+
